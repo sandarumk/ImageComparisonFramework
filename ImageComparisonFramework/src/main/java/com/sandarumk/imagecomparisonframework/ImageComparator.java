@@ -1,5 +1,6 @@
 package com.sandarumk.imagecomparisonframework;
 
+import com.sandarumk.imagecomparisonframework.ImageComparisonEngine.PCASIFTMatcher;
 import com.sandarumk.imagecomparisonframework.ImageComparisonEngine.PixelMatcher;
 import com.sandarumk.imagecomparisonframework.ImageComparisonEngine.SIFTMatcher;
 
@@ -19,11 +20,11 @@ public class ImageComparator {
     }
 
     public static double getSIFTBasedMatchingScore(BufferedImage mockup, BufferedImage actual) {
-        return 0.0;
+        return SIFTMatcher.getSIFTBasedMatchingScore(mockup,actual);
     }
 
     public static double getPCASIFTBasedMatchingScore(BufferedImage mockup, BufferedImage actual) {
-        return 0.0;
+        return PCASIFTMatcher.getPCASIFTBasedMatchingScore(mockup,actual);
     }
 
     public static double getCSIFTBasedMatchingScore(BufferedImage mockup, BufferedImage actual) {
