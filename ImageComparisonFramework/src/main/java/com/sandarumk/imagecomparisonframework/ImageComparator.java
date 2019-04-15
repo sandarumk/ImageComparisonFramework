@@ -1,6 +1,7 @@
-package main.com.sandarumk.imagecomparisonframework;
+package com.sandarumk.imagecomparisonframework;
 
-import main.com.sandarumk.imagecomparisonframework.ImageComparisonEngine.PixelMatcher;
+import com.sandarumk.imagecomparisonframework.ImageComparisonEngine.PixelMatcher;
+import com.sandarumk.imagecomparisonframework.ImageComparisonEngine.SIFTMatcher;
 
 import java.awt.image.BufferedImage;
 
@@ -14,7 +15,7 @@ public class ImageComparator {
     }
 
     public static double getLayoutMatchingScore(BufferedImage mockup, BufferedImage actual) {
-        return 0.0;
+        return SIFTMatcher.getSIFTBasedMatchingScore(mockup,actual);
     }
 
     public static double getSIFTBasedMatchingScore(BufferedImage mockup, BufferedImage actual) {

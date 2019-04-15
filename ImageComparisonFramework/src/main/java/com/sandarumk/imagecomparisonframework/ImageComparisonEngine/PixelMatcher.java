@@ -1,4 +1,4 @@
-package main.com.sandarumk.imagecomparisonframework.ImageComparisonEngine;
+package com.sandarumk.imagecomparisonframework.ImageComparisonEngine;
 
 import java.awt.image.BufferedImage;
 
