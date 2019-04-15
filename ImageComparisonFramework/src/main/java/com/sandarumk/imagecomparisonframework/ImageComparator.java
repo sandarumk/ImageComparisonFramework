@@ -1,5 +1,6 @@
 package com.sandarumk.imagecomparisonframework;
 
+import com.sandarumk.imagecomparisonframework.ImageComparisonEngine.CSIFTMatcher;
 import com.sandarumk.imagecomparisonframework.ImageComparisonEngine.PCASIFTMatcher;
 import com.sandarumk.imagecomparisonframework.ImageComparisonEngine.PixelMatcher;
 import com.sandarumk.imagecomparisonframework.ImageComparisonEngine.SIFTMatcher;
@@ -28,7 +29,7 @@ public class ImageComparator {
     }
 
     public static double getCSIFTBasedMatchingScore(BufferedImage mockup, BufferedImage actual) {
-        return 0.0;
+        return CSIFTMatcher.getCSIFTBasedMatchingScore(mockup,actual);
     }
 
     public static double getBlobDetectionBasedMatchingScore(BufferedImage mockup, BufferedImage actual) {
